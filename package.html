@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>bangladesh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+      body {
+        font: 400 15px/1.8 Lato, sans-serif;
+        color: #777;
+      }
+      h3,
+      h4 {
+        margin: 10px 0 30px 0;
+        letter-spacing: 10px;
+        font-size: 20px;
+        color: #111;
+      }
+      .container {
+        padding: 80px 120px;
+      }
+      .person {
+        border: 10px solid transparent;
+        margin-bottom: 25px;
+        width: 80%;
+        height: 80%;
+        opacity: 0.7;
+      }
+      .person:hover {
+        border-color: #f1f1f1;
+      }
+      .carousel-inner img {
+        width: 100%; /* Set width to 100% */
+        margin: auto;
+      }
+      .carousel-caption h3 {
+        color: #fff !important;
+      }
+      @media (max-width: 600px) {
+        .carousel-caption {
+          display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+        }
+      }
+      .bg-1 {
+        background: #2d2d30;
+        color: #bdbdbd;
+      }
+      .bg-1 h3 {
+        color: #fff;
+      }
+      .bg-1 p {
+        font-style: italic;
+      }
+      .list-group-item:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+      .list-group-item:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+      }
+      .thumbnail p {
+        margin-top: 15px;
+        color: #555;
+      }
+      .btn {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #f1f1f1;
+        border-radius: 0;
+        transition: 0.2s;
+      }
+      .btn:hover,
+      .btn:focus {
+        border: 1px solid #333;
+        background-color: #fff;
+        color: #000;
+      }
+      .modal-header,
+      h4,
+      .close {
+        background-color: #333;
+        color: #fff !important;
+        text-align: center;
+        font-size: 30px;
+      }
+      .modal-header,
+      .modal-body {
+        padding: 40px 50px;
+      }
+      .nav-tabs li a {
+        color: #777;
+      }
+      #googleMap {
+        width: 100%;
+        height: 400px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+      }
+      .navbar {
+        font-family: Montserrat, sans-serif;
+        margin-bottom: 0;
+        background-color: #2d2d30;
+        border: 0;
+        font-size: 11px !important;
+        letter-spacing: 4px;
+        opacity: 0.9;
+      }
+      .navbar li a,
+      .navbar .navbar-brand {
+        color: #d5d5d5 !important;
+      }
+      .navbar-nav li a:hover {
+        color: #fff !important;
+      }
+      .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #29292c !important;
+      }
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+      }
+      .open .dropdown-toggle {
+        color: #fff;
+        background-color: #555 !important;
+      }
+      .dropdown-menu li a {
+        color: #000 !important;
+      }
+      .dropdown-menu li a:hover {
+        background-color: red !important;
+      }
+      footer {
+        background-color: #2d2d30;
+        color: #f5f5f5;
+        padding: 32px;
+      }
+      footer a {
+        color: #f5f5f5;
+      }
+      footer a:hover {
+        color: #777;
+        text-decoration: none;
+      }
+      .form-control {
+        border-radius: 0;
+      }
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">bangladesh</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">HOME</a></li>
+            <li><a href="#band">PLACES</a></li>
+            <li><a href="#tour">TOUR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >MORE <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="login.html">Admin?</a></li>
+                <li><a href="guide.html">Guide?</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row ">
+    
+        <div class="constrained-width">
+          
+    
+      <div class="col col--1-1" id="ss-ImageNavigationBlock-1298158" data-renderertype="default" data-o_id="ss-ImageNavigationBlock-1298158">
+    <nav class="image-navigation image-navigation__layout-2">
+      
+        
+        
+          <div class="image-navigation__item">
+            <a data-name_key="north-island" href="carousel6.jpg" data-o_id="ss-TopicPage-7772" class=" image-navigation__link o-image__center o-image--overlay-gradient trk-imagenav-a">
+              <figure id="js-fig-D15B41B8-0A7D-4D48-8435-0F59ADD404EE" data-unique_id="ss-Image-48852" class="lazy--loaded">
+                <span id="js-fig-wrapper-D15B41B8-0A7D-4D48-8435-0F59ADD404EE" class="figure-image--wrapper o-ratio--1-1@phablet+@desktop-"><img id="js-img-D15B41B8-0A7D-4D48-8435-0F59ADD404EE" alt="Hobbiton Movie Set" data-imagenav="1" class="lazy lazy-loading" data-original="https://www.newzealand.com/assets/Tourism-NZ/Hamilton-Waikato/54986b51dd/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzMwMCw2MjAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg" src="https://www.newzealand.com/assets/Tourism-NZ/Hamilton-Waikato/54986b51dd/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzMwMCw2MjAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg" onload="TNZ.EventManager.trigger('TNZ.FigureLoader.AssetLoaded',{'id':'js-fig-D15B41B8-0A7D-4D48-8435-0F59ADD404EE', 'isPlaceholder':false});">
+                  <noscript>
+                    <img src="/assets/Tourism-NZ/Hamilton-Waikato/54986b51dd/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzIwNCwyMDQsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg" alt="Hobbiton Movie Set" />
+                  </noscript>
+                </span>
+                <figcaption class="image-navigation__content">
+                  <h4 class="image-navigation__header">North Island
+                    
+                    <span class="image-navigation__title-icon" aria-hidden="true">
+                      <i class="o-icon js-icons ">
+    <svg class="icon long-arrow-right " role="img" aria-label="long-arrow-right" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <title>long-arrow-right</title>
+      <path d="M30.857 16.232q0 0.25-0.179 0.429l-6.857 6.321q-0.286 0.25-0.625 0.107-0.339-0.161-0.339-0.518v-4h-22.286q-0.25 0-0.411-0.161t-0.161-0.411v-3.429q0-0.25 0.161-0.411t0.411-0.161h22.286v-4q0-0.375 0.339-0.518t0.625 0.089l6.857 6.25q0.179 0.179 0.179 0.411z"></path>
+    </svg>
+  </i>
+  
+                    </span>
+                  </h4>
+  
+                  
+  
+                  <p class="image-navigation__summary">North Island, New&nbsp;Zealand is home to active volcanoes, island sanctuaries, amazing beaches, thrilling walks with breathtaking views. Check out all you can do in North Island.</p>
+                </figcaption>
+                <script type="text/javascript">
+      TNZ.JSLib.requireLoadEvent(['global.figuremanager.lib'], function() {
+          TNZ.FigureManager.initaliseFigure(
+              "FIG-ss-ImageNavigationItem-508163-ss-Image-48852",
+              true,
+              {"hasPlaceHolders":false,"allowSizingRatio":true,"attributes":{"alt":"Hobbiton Movie Set","data-imagenav":"1"},"baseURL":"https:\/\/www.newzealand.com","formats":[{"IMGFilePath":"\/assets\/Tourism-NZ\/Hamilton-Waikato\/54986b51dd\/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzE2MCwzMjAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":320,"height":160,"deviceContext":"mobile","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false},{"IMGFilePath":"\/assets\/Tourism-NZ\/Hamilton-Waikato\/54986b51dd\/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzMyMCwzMjAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":320,"height":320,"deviceContext":"","sizingRatio":"1-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":true},{"IMGFilePath":"\/assets\/Tourism-NZ\/Hamilton-Waikato\/54986b51dd\/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzIwNCwyMDQsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":204,"height":204,"deviceContext":"","sizingRatio":"1-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":true},{"IMGFilePath":"\/assets\/Tourism-NZ\/Hamilton-Waikato\/54986b51dd\/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzMwMCw2MjAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":620,"height":300,"deviceContext":"","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false},{"IMGFilePath":"\/assets\/Tourism-NZ\/Hamilton-Waikato\/54986b51dd\/img-1536280982-3035-15788-F384E624-9404-2963-6B0FCA6AEAB2CB13-v2__FocalPointCropWzI0MCw0ODAsNTAsNTgsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":480,"height":240,"deviceContext":"","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false}]},
+              'FIG-ss-ImageNavigationItem-508163-ss-Image-48852',
+              'SPAN-FIG-ss-ImageNavigationItem-508163-ss-Image-48852',
+              false
+          );
+      });
+  </script>
+              </figure>
+            </a>
+          </div>
+        
+      
+        
+        
+          <div class="image-navigation__item">
+            <a data-name_key="south-island" href="/int/south-island/" data-o_id="ss-TopicPage-7700" class=" image-navigation__link o-image__center o-image--overlay-gradient trk-imagenav-a">
+              <figure id="js-fig-ADAFB995-DF8D-4165-9A20-21D07741AF79" data-unique_id="ss-Image-48381" class="lazy--loaded">
+                <span id="js-fig-wrapper-ADAFB995-DF8D-4165-9A20-21D07741AF79" class="figure-image--wrapper o-ratio--1-1@phablet+"><img id="js-img-ADAFB995-DF8D-4165-9A20-21D07741AF79" alt="Explore Franz Josef Glacier" data-imagenav="2" class="lazy lazy-loading" data-original="https://www.newzealand.com/assets/Tourism-NZ/West-Coast/7eee59f0d8/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzMwMCw2MjAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg" src="https://www.newzealand.com/assets/Tourism-NZ/West-Coast/7eee59f0d8/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzMwMCw2MjAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg" onload="TNZ.EventManager.trigger('TNZ.FigureLoader.AssetLoaded',{'id':'js-fig-ADAFB995-DF8D-4165-9A20-21D07741AF79', 'isPlaceholder':false});">
+                  <noscript>
+                    <img src="/assets/Tourism-NZ/West-Coast/7eee59f0d8/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzIwNCwyMDQsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg" alt="Explore Franz Josef Glacier" />
+                  </noscript>
+                </span>
+                <figcaption class="image-navigation__content">
+                  <h4 class="image-navigation__header">South Island
+                    
+                    <span class="image-navigation__title-icon" aria-hidden="true">
+                      <i class="o-icon js-icons ">
+    <svg class="icon long-arrow-right " role="img" aria-label="long-arrow-right" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <title>long-arrow-right</title>
+      <path d="M30.857 16.232q0 0.25-0.179 0.429l-6.857 6.321q-0.286 0.25-0.625 0.107-0.339-0.161-0.339-0.518v-4h-22.286q-0.25 0-0.411-0.161t-0.161-0.411v-3.429q0-0.25 0.161-0.411t0.411-0.161h22.286v-4q0-0.375 0.339-0.518t0.625 0.089l6.857 6.25q0.179 0.179 0.179 0.411z"></path>
+    </svg>
+  </i>
+  
+                    </span>
+                  </h4>
+  
+                  
+                    <div class="image-navigation__map">
+                      <div class="region-map">
+                          <img src="/resources/themes/tourism/dist/37955c29b268559deba8ff791a8e8c9b/images/region-map/christchurch-canterbury.png" alt="Christchurch - Canterbury">
+                      </div>
+                    </div>
+                  
+  
+                  <p class="image-navigation__summary">New&nbsp;Zealand's South Island showcases the purest natural landscapes. From rugged coastlines to lush plains, the South Island has amazing views.</p>
+                </figcaption>
+                <script type="text/javascript">
+      TNZ.JSLib.requireLoadEvent(['global.figuremanager.lib'], function() {
+          TNZ.FigureManager.initaliseFigure(
+              "FIG-ss-ImageNavigationItem-508164-ss-Image-48381",
+              true,
+              {"hasPlaceHolders":false,"allowSizingRatio":true,"attributes":{"alt":"Explore Franz Josef Glacier","data-imagenav":"2"},"baseURL":"https:\/\/www.newzealand.com","formats":[{"IMGFilePath":"\/assets\/Tourism-NZ\/West-Coast\/7eee59f0d8\/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzE2MCwzMjAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":320,"height":160,"deviceContext":"mobile","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false},{"IMGFilePath":"\/assets\/Tourism-NZ\/West-Coast\/7eee59f0d8\/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzMyMCwzMjAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":320,"height":320,"deviceContext":"","sizingRatio":"1-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":true},{"IMGFilePath":"\/assets\/Tourism-NZ\/West-Coast\/7eee59f0d8\/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzIwNCwyMDQsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":204,"height":204,"deviceContext":"","sizingRatio":"1-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":true},{"IMGFilePath":"\/assets\/Tourism-NZ\/West-Coast\/7eee59f0d8\/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzMwMCw2MjAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":620,"height":300,"deviceContext":"","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false},{"IMGFilePath":"\/assets\/Tourism-NZ\/West-Coast\/7eee59f0d8\/img-1536282034-843-20075-8C0ECC4E-DB06-0485-33914FCD62CE62EF__FocalPointCropWzI0MCw0ODAsNTAsNjYsNzUsImpwZyIsNjUsMi41XQ.jpg","hires":false,"width":480,"height":240,"deviceContext":"","sizingRatio":"2-1","type":"jpg","formatAttributes":{},"PHIMGFilePath":null,"DefaultFormat":false}]},
+              'FIG-ss-ImageNavigationItem-508164-ss-Image-48381',
+              'SPAN-FIG-ss-ImageNavigationItem-508164-ss-Image-48381',
+              false
+          );
+      });
+  </script>
+              </figure>
+            </a>
+          </div>
+        
+      
+    </nav>
+  </div>
+  
+    
+  
+  
+        </div>
+      
+    </div>
+
+    
+  </body>
+</html>
